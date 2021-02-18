@@ -8,7 +8,7 @@
 
 let model_ = require('./../models/country.model')
 
-let basicCrudConstructorHelper = require('../helpers/basicCrudConstructor.helper')
+let basicCrudConstructorHelper = require('../helpers/basicCRUDConstructor.helper')
 
 var validationObject = {
     name: 'string',

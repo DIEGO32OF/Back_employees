@@ -7,7 +7,7 @@
 
 
 let model_ = require('./../models/vacantes.model')
-let basicCrudConstructorHelper = require('../helpers/basicCrudConstructor.helper')
+let basicCrudConstructorHelper = require('../helpers/basicCRUDConstructor.helper')
 
 var validationObject = {
     description: 'string',
