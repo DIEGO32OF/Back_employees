@@ -4,7 +4,7 @@ const moment = require('moment');
 
 
 
-const countryModel = new Schema({
+const bankModel = new Schema({
     status: {
         type: Number
     },
@@ -12,29 +12,10 @@ const countryModel = new Schema({
     name: {
         required: true,
         type: String
-    },
-    short_name: {
-        required: true,
+    },    
+    pais: {
         type: String
-    },
-    code: {
-        required: true,
-        type: Number
-    },
-    
-    language: {
-        
-        type: String
-    },
-   /*  banks:[{
-        type: Schema.Types.ObjectId,
-        ref: documentsModel
-    }], */
-    flag: {
-        type: String
-    },
-        
-   
+    },         
     createdAt: {
         type: Date,
         required: true,
@@ -47,4 +28,4 @@ const countryModel = new Schema({
     },
 })
 
-module.exports = mongoose.model('country', countryModel );
+module.exports = mongoose.model('bank', bankModel );

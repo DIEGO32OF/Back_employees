@@ -7,6 +7,7 @@ var app = express();
 
  var vacantes_route = require('./Routes/Vacantes.route');
  var country_route = require('./Routes/country.route');
+ var bank_route = require('./Routes/bank.route');
  
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
@@ -23,6 +24,8 @@ next();
 
 app.use('/api', vacantes_route);
 app.use('/api', country_route);
+app.use('/api', bank_route);
+
 
 
 
