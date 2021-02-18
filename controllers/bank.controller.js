@@ -7,7 +7,7 @@
 
 
 let model_ = require('./../models/bank.model')
-let basicCrudConstructorHelper = require('./../helpers/basicCrudConstructor.helper')
+let basicCrudConstructorHelper = require('../helpers/basicCrudConstructor.helper')
 
 var validationObject = {
     name: 'string',
