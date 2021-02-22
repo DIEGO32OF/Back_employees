@@ -4,6 +4,7 @@ const moment = require('moment');
 
 let vacanteModel = require('./vacantes.model')
 let documentsModel = require('./documents.model')
+let bankModel = require('./bank.model')
 
 const dealerModel = new Schema({
     status: {
@@ -50,7 +51,7 @@ const dealerModel = new Schema({
     }],
    bank_id:{
     type: Schema.Types.ObjectId,
-    ref: vacanteModel
+    ref: bankModel
 },
 clabe_account: {
     type: String
@@ -59,10 +60,15 @@ emergency_phone:
 {
     type: String
 },   
-is_frelance:{
+is_driver:{
     type: Boolean
 },   
-
+base_salary:{
+    type: String
+},
+country:{
+    type: String
+},
     createdAt: {
         type: Date,
         required: true,
